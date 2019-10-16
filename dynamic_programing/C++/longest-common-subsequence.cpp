@@ -11,12 +11,12 @@ void print(int i, int j) {
     if(i == 0 || j == 0)
         return;
     if(b[i][j] == 'x') {
-        print(i-1, j-1);
+        cout<<i-1<<" "<<j-1; 
         cout<<s1[i-1];
     } else if(b[i][j] == 'u') 
-        print(i-1, j);
+        cout<<i-1<<" "<<j; 
     else
-        print(i, j-1);
+        cout<<i<<" "<<j-1; 
 }
 
 int main() {
@@ -42,6 +42,6 @@ int main() {
         }
     }
 
-    print(m, n);
+    cout<<m<<" "<<n;
     return 0;
 }
